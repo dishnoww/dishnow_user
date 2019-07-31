@@ -16,6 +16,7 @@ export default (props) => {
         });
     }
     const _me = async () => {
+        console.log('heelop');
         let token = await API.getLocal(API.LOCALKEY_TOKEN);
         console.log(token);
         if (token === 'null') {
